@@ -1,0 +1,8 @@
+; $Id$
+name = MRP Utilities
+description = Utility functions for Maine Rural Partners.
+core = 7.x
+package = MRP
+version = VERSION
+
+files[] = mrp_utils.module
