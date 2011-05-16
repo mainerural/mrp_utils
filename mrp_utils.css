@@ -1,8 +1,13 @@
 /* for hightlighting completed checkpoints */
 
-.mrp_completed_checkpoint:before {
-  content: url('green-check-12x12.gif');
-  margin-right: 3px;
+.mrp_completed_checkpoint:after {
+  background: #52a269;
+  border-radius: 3px;
+  color: #e2f1e8;
+  content: '✓';
+  font: 14px/18px 'Arial Unicode', sans-serif;
+  margin: 0 0 0 6px;
+  padding: 2px 4px;
 }
 
 /* link inline subhead */
@@ -13,50 +18,6 @@ div.meta ul.links li.first:before {
   position: relative;
   top: -3px;
 }
-
-/* Fancy pulled quotes */
-
-.bq {
-  background: none repeat scroll 0 0 #F5F5F5;
-  border-left: 0.8em solid #CCCCCC;
-  float: right;
-  font: italic 120% Georgia, "Times New Roman", Times, serif;
-  padding: 0.75.em;
-  width: 30%;
-}
-
-.bq-author {
-	 display: block;
-	 font-size: 0.75em;
-	 font-style: normal;
-	 font-weight: bold;
-	 line-height: 1.2em;
-	 margin: 1em 0 0;
-	 text-align: right;
-}
-
-.bq-author:before {
-	content: '--';
-}
-
-.bq p:first-letter {
-  font-size: 2em;
-  font-family: "Edwardian Script ITC", "Brush Script MT", cursive;
-  padding-right: .25em;
-  font-weight: bold;
-}
-
-.bq p:first-line { line-height: 100%; } 
-
-
-.bq .bq-author p:first-letter {
-  font-size: normal;
-  font: Georgia, "Times New Roman", Times, serif;
-  padding-right: none;
-  font-weight: normal;
-}
-
-.bq .bq-author p:first-line { line-height: normal; } 
 
 /* Consider doing with hook_form_alter */
 
@@ -107,12 +68,12 @@ div.field-name-field-resource div.field-items {
 
 /* calculated size */
 div.field-name-field-resource div.node-headline a {
-  font-size: 14pt !important;
+  font-size: 19px !important;   /* 14pt = 18.66667px */
   border: none !important!;
   font-weight: bold;
   display: inline;
-  line-height: 14pt;
-  margin: 0 0 0 6
+  line-height: 19px;    /* 14pt = 18.66667px */
+  margin: 0 0 0 6px;
   padding: 0;
   text-transform: none;
 }
@@ -145,12 +106,4 @@ div.field-name-field-resource .content fieldset {
 
 div.field-name-field-resource .node-headline {
   border: none !important;
-}
-
-
-/* nicer active toolkit page */
-
-.block-mrp-book-utils a.active {
-  font-weight: bold;
-  color: #009345; 
 }
