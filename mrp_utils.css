@@ -41,12 +41,12 @@ div.field-name-field-resource div.field-items {
 
 /* calculated size */
 div.field-name-field-resource div.node-headline a {
-  font-size: 14pt !important;
+  font-size: 19px !important;   /* 14pt = 18.66667px */
   border: none !important!;
   font-weight: bold;
   display: inline;
-  line-height: 14pt;
-  margin: 0 0 0 6
+  line-height: 19px;    /* 14pt = 18.66667px */
+  margin: 0 0 0 6px;
   padding: 0;
   text-transform: none;
 }
@@ -80,4 +80,3 @@ div.field-name-field-resource .content fieldset {
 div.field-name-field-resource .node-headline {
   border: none !important;
 }
-
