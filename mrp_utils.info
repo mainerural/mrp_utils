@@ -6,3 +6,5 @@ package = MRP
 version = VERSION
 
 files[] = mrp_utils.module
+
+stylesheets[all][] = mrp_utils.css

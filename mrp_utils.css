@@ -1,63 +1,3 @@
-/* for hightlighting completed checkpoints */
-
-.mrp_completed_checkpoint:before {
-  content: url('green-check-12x12.gif');
-  margin-right: 3px;
-}
-
-/* link inline subhead */
-
-div.meta ul.links li.first:before {
-  content: 'Share this page:';
-  padding-right: .5em;
-  position: relative;
-  top: -3px;
-}
-
-/* Fancy pulled quotes */
-
-.bq {
-  background: none repeat scroll 0 0 #F5F5F5;
-  border-left: 0.8em solid #CCCCCC;
-  float: right;
-  font: italic 120% Georgia, "Times New Roman", Times, serif;
-  padding: 0.75.em;
-  width: 30%;
-}
-
-.bq-author {
-	 display: block;
-	 font-size: 0.75em;
-	 font-style: normal;
-	 font-weight: bold;
-	 line-height: 1.2em;
-	 margin: 1em 0 0;
-	 text-align: right;
-}
-
-.bq-author:before {
-	content: '--';
-}
-
-.bq p:first-letter {
-  font-size: 2em;
-  font-family: "Edwardian Script ITC", "Brush Script MT", cursive;
-  padding-right: .25em;
-  font-weight: bold;
-}
-
-.bq p:first-line { line-height: 100%; } 
-
-
-.bq .bq-author p:first-letter {
-  font-size: normal;
-  font: Georgia, "Times New Roman", Times, serif;
-  padding-right: none;
-  font-weight: normal;
-}
-
-.bq .bq-author p:first-line { line-height: normal; } 
-
 /* Consider doing with hook_form_alter */
 
 .field-type-node-reference h2 {
@@ -90,12 +30,6 @@ div.book-navigation {
 
 #comments h2.comment-form {
 	visibility:hidden;
-}
-
-#comment-form:before {
-	font-size: 120%;
-	font-style: italic;
-  content: "Join the conversation!";
 }
 
 /* nodereference returns entire node, we just want part */
@@ -147,10 +81,3 @@ div.field-name-field-resource .node-headline {
   border: none !important;
 }
 
-
-/* nicer active toolkit page */
-
-.block-mrp-book-utils a.active {
-  font-weight: bold;
-  color: #009345; 
-}
